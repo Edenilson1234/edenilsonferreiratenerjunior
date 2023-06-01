@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="logotipo1.png">
+            <img id="logo" src="logotipo.png">
             <h1 class="titulo-principal">Login para acesso ao Site</h1>
         </header>
         <main>
@@ -40,15 +40,58 @@
                     <label for="mesagem"> Mensagem </label>
                     <textarea cols="45" row="100" id="mensagem" required></textarea>
 
+                    <br> <br>
+
                     <section>
-                        <p>Como prefere nosso contato</p>
+                        <p>Qual forma contato?</p>
                         <input type="radio" name="contato" value="email" id="radio-email">
-                        <label for="radios-email">email</label>
+                        <label for="radios-email">E-mail</label>
+
+                        <br>
+
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatssap">
+                        <label for="radio-whatssap">Whatsapp</label>
+
+                        <br>
+
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone" checked>
+                        <label for="radio-telefone">telefone</label>
+
+                        <br>
+
                     </section>
+
+                    <br>
+
+                    <section>
+                        <p>Qual horario prefe ser atendido?</p>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </section>
+
+                    <br> <br> <br> <br>
+
+                    <label class="checkbox">
+                        <input type="checkbox">Gostaria de Receber nossas novidades por email?</label>
+                    </section>
+
+                    <br> <br>
+
+                    <section>
+                        <input type="sumbit" value="Enviar Formulario" id="enviar"
+                        clas="inputUser">
+                    </section>
+
                 </fieldset>
             </form>
         </main>
-
+        <footer>
+            <img id="logo2" src="logotipo1.png">
+            <p class="copyright">&copy; Copyright -- Edenilson Junior</p>
+        </footer>
 
     </body>
 </html>
