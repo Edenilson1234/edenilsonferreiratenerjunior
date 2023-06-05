@@ -5,63 +5,58 @@
         <title>contato</title>
 
         <link rel="stylesheet" href="contato.css">
+        <link rel="stylesheet" href="reset.css">
 
     </head>
     <body>
         <header>
             <img id="logo" src="logotipo.png">
-            <h1 class="titulo-principal">Login para acesso ao Site</h1>
+            <h1 class="titulo-principal">Game Cube</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produto.html">Produto</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <form>
-                <fieldset>
-                    <legend><strong>
-                        Game Cube
-                    </legend></strong>
-
-                    <label for="nomeesobrenome">Insira seu Nome e Sobrenome</label>
+               
+                    <label for="nomeesobrenome">Nome e Sobrenome</label>
                     <input type="text" nome="nome" id="nomeesobrenome"
                     class="input-padrao" placeholder="Seu nome e sobrenome" required>
 
-                    <br> <br>
+                    <br>
 
-                    <label for="email">insira seu email</label>
+                    <label for="email">Email</label>
                     <input type="email" nome="email" id="email"
                     class="input-padrao" placeholder="Seu E-mail" required>
 
-                    <br> <br>
+                    <br>
 
-                    <label for="telefone">Insira seu telefone</label>
+                    <label for="telefone">Telefone</label>
                     <input type="telefone" nome="telefone" id="telefone"
                     class="input-padrao" placeholder="(XX) XXXX-XXXX" required>
 
-                    <br> <br>
+                    <br>
 
-                    <label for="mesagem"> Mensagem </label>
-                    <textarea cols="45" row="100" id="mensagem" required></textarea>
-
-                    <br> <br>
-
-                    <section>
-                        <p>Qual forma contato?</p>
-                        <input type="radio" name="contato" value="email" id="radio-email">
-                        <label for="radios-email">E-mail</label>
-
-                        <br>
-
-                        <input type="radio" name="contato" value="whatsapp" id="radio-whatssap">
-                        <label for="radio-whatssap">Whatsapp</label>
-
-                        <br>
-
-                        <input type="radio" name="contato" value="telefone" id="radio-telefone" checked>
-                        <label for="radio-telefone">telefone</label>
-
-                        <br>
-
-                    </section>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" placeholder="Digite seu texto aqui!" required></textarea>
 
                     <br>
+
+                    <section>
+                    <p>Qual forma de contato?</p>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                   
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                   
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+
+                   </section>
+                   <br>
 
                     <section>
                         <p>Qual horario prefe ser atendido?</p>
@@ -72,24 +67,20 @@
                         </select>
                     </section>
 
-                    <br> <br> <br> <br>
-
+                   
                     <label class="checkbox">
                         <input type="checkbox">Gostaria de Receber nossas novidades por email?</label>
                     </section>
 
                     <br> <br>
 
-                    <section>
-                        <input type="sumbit" value="Enviar Formulario" id="enviar"
-                        clas="inputUser">
-                    </section>
+                    <input type="submit" value="Enviar formulário" class="enviar">
 
-                </fieldset>
+               
             </form>
         </main>
         <footer>
-            <img id="logo2" src="logotipo1.png">
+            <img id="logo2" src="logotipo.png">
             <p class="copyright">&copy; Copyright -- Edenilson Junior</p>
         </footer>
 
