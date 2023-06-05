@@ -21,6 +21,37 @@ header{
     transform: translate(-10%, -50%);
     font-size: 45px;
     font-family:'opensans';
+    color:black;
+    text-shadow:
+                -1px -1px 0px #ffff,
+                -1px 4px 0px #ffff,
+                1px -1px 0px #ffff,
+                1px 0px 0px #ffff;
+}
+
+nav{
+    position: absolute;
+    top:180px;
+    right: 50px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 22px;
+    text-decoration: none;
+
+    font-family: gagalin;
+}
+
+nav a:hover {
+    color: #8713bd;
+    text-decoration: underline;
 }
 
 main{
@@ -34,19 +65,19 @@ form{
 }
 
 form label, form p{
-    display: black;
+    display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
 .input-padrao{
-    display: black;
-    margin: o o 20px;
+    display: block;
+    margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
 
-input::placeholder, textarea{
+input::placeholder{
     color:rgb(66, 6, 143)
 }
 
@@ -54,7 +85,7 @@ input::placeholder, textarea{
     margin: 20px 0;
 }
 
-#enviar{
+.enviar{
     width: 40%;
     padding: 15px 0;
     background: rgb(119, 0, 255);
@@ -65,4 +96,28 @@ input::placeholder, textarea{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+}
+
+.enviar:hover {
+    background:rgb(43, 3, 90);
+    transform: scale(1.1);
+}
+
+.copyright{
+    color:black;
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+
+footer{
+    text-align: center;
+    background-image: url ("logotipo.png");
+    padding: 10px 0;
+    background: rgb(27, 219, 219);
+}
+
+#logo2{
+    border-radius: 500px;
+    width: 90px;
+    height: 90px;
 }
