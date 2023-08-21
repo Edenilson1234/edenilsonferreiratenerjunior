@@ -1,0 +1,21 @@
+input{Text-align:center;
+    text-transform:uppercase;
+    background-color: gray;
+    color:red;
+    font-size: 20px;
+    
+    border-color: blue;
+    border-style: dotted;
+    text-decoration:underline;
+    font-weight: bold;
+}
+input[type=date]{
+    color:red;}
+
+
+select{color:rgb(17, 0, 255);}
+
+body{
+    color: black;
+    background-color: cadetblue;
+}
